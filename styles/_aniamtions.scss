@@ -1,0 +1,53 @@
+@use './mixins';
+
+@keyframes spinner-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// infinite-spinner-rotate
+// ex) @include infinite-spinner-rotate
+
+@mixin infinite-spinner-rotate($time: var(--animation-transition)) {
+	@include property-set-prefix(spinner-rotate, $time infinite linear);
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}
+	to {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+// fade-in-interaction
+// ex) @include fade-in-interaction
+
+@mixin fade-in-interaction {
+	@include property-set-prefix(fade-in, var(--animation-transition) ease-in);
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+		visibility: visible;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+// fade-out-interaction
+// ex) @include fade-out-interaction
+
+@mixin fade-out-interaction {
+	@include property-set-prefix(fade-out, var(--animation-transition) ease-out);
+}
