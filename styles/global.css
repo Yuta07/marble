@@ -1,7 +1,7 @@
 :root {
 	/* base color */
 	--color-primary: #3c3a3a;
-	--color-secondary: #3c3a3a;
+	--color-secondary: #ffffff;
 	--color-gray: #8c8c8c;
 	--color-gray-lighten: #8c8c8c;
 	--color-gray-derken: #8c8c8c;
@@ -17,11 +17,14 @@
 	--color-transparent: transparent;
 
 	/* font size */
+	--font-size-xxs: 10px;
 	--font-size-xs: 12px;
 	--font-size-s: 14px;
 	--font-size-m: 16px;
 	--font-size-l: 18px;
 	--font-size-xl: 20px;
+	--font-size-xxl: 24px;
+	--font-size-xxxl: 32px;
 
 	/* font bold */
 	--font-weight-normal: 400;
@@ -31,9 +34,10 @@
 	--line-width-normal: 1px;
 	--line-width-bold: 2px;
 	--line-style: solid;
-	--line-radius: 6px;
-	--border-normal: var(--line-width-normal) var(--line-style) var(--color-border);
-	--border-bold: var(--line-width-bold) var(--line-style) var(--color-border);
+	--line-radius: 8px;
+	--border-normal: var(--line-width-normal) var(--line-style) var(--color-gray);
+	--border-normal-main: var(--line-width-normal) var(--line-style) var(--color-main);
+	--border-bold: var(--line-width-bold) var(--line-style) var(--color-gray);
 
 	/* opacity */
 	--hover-feedback-opacity: 0.7;
