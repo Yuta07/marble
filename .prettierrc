@@ -1,9 +1,9 @@
 {
 	"bracketSpacing": true,
 	"jsxBracketSameLine": false,
-	"semi": true,
+	"semi": false,
 	"singleQuote": true,
-	"trailingComma": "all",
+	"trailingComma": "es5",
 	"useTabs": true,
 	"printWidth": 120,
 	"overrides": [
