@@ -1,7 +1,7 @@
 :root {
 	/* base color */
-	--color-primary: #333333;
-	--color-secondary: #ffffff;
+	--color-primary: #ffffff;
+	--color-secondary: #333333;
 	--color-gray: #939597;
 	--color-gray-lighten: #b6b7b9;
 	--color-gray-derken: #6f7071;
@@ -30,6 +30,7 @@
 	--line-width-bold: 2px;
 	--line-style: solid;
 	--line-radius: 8px;
+	--line-radius-double: 16px;
 	--border-normal: var(--line-width-normal) var(--line-style) var(--color-gray);
 	--border-normal-main: var(--line-width-normal) var(--line-style) var(--color-main);
 	--border-bold: var(--line-width-bold) var(--line-style) var(--color-gray);
