@@ -1,8 +1,17 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "baseUrl": ".",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@contexts/*": ["contexts/*"],
+      "@foundations/*": ["foundations/*"],
+      "@hooks/*": ["hooks/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -27,6 +36,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
   "exclude": ["node_modules"]
 }

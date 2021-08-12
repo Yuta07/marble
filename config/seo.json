@@ -1,0 +1,16 @@
+{
+  "title": "Next.js socket-chat",
+  "titleTemplate": "%s - socket-chat",
+  "description": "Next.js socket.io chat",
+  "openGraph": {
+    "title": "Next.js socket-chat",
+    "description": "Next.js socket.io chat",
+    "type": "website",
+    "site_name": "Next.js socket-chat"
+  },
+  "twitter": {
+    "handle": "@yutaaaaa___",
+    "site": "@site",
+    "cardType": "summary_large_image"
+  }
+}
