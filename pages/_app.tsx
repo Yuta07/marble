@@ -5,7 +5,7 @@ import 'sanitize.css/forms.css'
 import 'tailwindcss/tailwind.css'
 
 import { Head } from '@components/common/Head'
-import { Layout } from '@foundations/Layout'
+import { Layout } from '@components/common/Layout'
 import '@styles/global.css'
 import '@styles/global.scss'
 

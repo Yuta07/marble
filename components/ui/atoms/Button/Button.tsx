@@ -1,6 +1,7 @@
 import { forwardRef } from 'react'
 import classnames from 'classnames'
 import styles from './Button.module.scss'
+import { LoadingDots } from '@components/ui/atoms/LoadingDots'
 
 type BaseProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
@@ -17,7 +18,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, cl
 
 	return (
 		<button {...props} ref={ref} className={rootClassName}>
-			{children}
+			{loading ? <LoadingDots /> : children}
 		</button>
 	)
 })

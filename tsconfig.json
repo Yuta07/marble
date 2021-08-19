@@ -7,7 +7,6 @@
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],
       "@contexts/*": ["contexts/*"],
-      "@foundations/*": ["foundations/*"],
       "@hooks/*": ["hooks/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"]

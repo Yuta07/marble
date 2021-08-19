@@ -5,7 +5,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<header className="py-4">
-				<h1 className="text-xl font-bold text-center">socket-chat</h1>
+				<h1 className="text-2xl font-bold text-center">socket-chat</h1>
 			</header>
 			<Cta />
 			<footer className="py-4">
