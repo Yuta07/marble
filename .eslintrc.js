@@ -22,8 +22,10 @@ module.exports = {
 		'plugin:@typescript-eslint/eslint-recommended',
 		'prettier',
 		'prettier/@typescript-eslint',
+		'plugin:tailwindcss/recommended',
 	],
 	plugins: ['@typescript-eslint', 'prettier', 'react'],
+	ignorePatterns: ['*.config.js'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
 		'react/prop-types': 'off',
