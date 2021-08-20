@@ -6,6 +6,7 @@ import 'tailwindcss/tailwind.css'
 
 import { Head } from '@components/common/Head'
 import { Layout } from '@components/common/Layout'
+import { UIProviderContainer } from '@contexts/ui/UIProviderContainer'
 import '@styles/global.css'
 import '@styles/global.scss'
 
@@ -13,9 +14,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head />
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
+			<UIProviderContainer>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</UIProviderContainer>
 		</>
 	)
 }
