@@ -1,4 +1,4 @@
-import { Button } from '@components/ui/atoms/Button'
+import { Button } from '@components/ui/Button'
 
 export const Cta = () => {
 	return (

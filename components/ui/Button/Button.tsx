@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 import classnames from 'classnames'
 import styles from './Button.module.scss'
-import { LoadingDots } from '@components/ui/atoms/LoadingDots'
+import { LoadingDots } from '../LoadingDots'
 
 type BaseProps = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
