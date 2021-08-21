@@ -1,0 +1,22 @@
+@import '/styles/mixins';
+
+.root {
+	font-size: var(--font-size-s);
+	color: var(--color-secondary);
+	background: var(--color-primary);
+	padding: 6px 10px;
+	border: var(--border-normal);
+	border-radius: var(--line-radius);
+	box-shadow: none;
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px var(--color-main);
+	}
+
+	::placeholder,
+	::-webkit-input-placeholder,
+	:-ms-input-placeholder {
+		color: var(--color-gray-lighten);
+	}
+}
