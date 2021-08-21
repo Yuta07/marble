@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactPortal, useCallback, useEffect, useRef, VFC } from 'react'
+import React, { ReactNode, ReactPortal, useEffect, useRef, VFC } from 'react'
 import { createPortal } from 'react-dom'
 import { FiX } from 'react-icons/fi'
 import classnames from 'classnames'

@@ -1,6 +1,7 @@
 import { FC, ReactNode, VFC } from 'react'
 import dynamic from 'next/dynamic'
 import { LoginView } from '@components/auth/LoginView'
+import { Header } from '@components/common/Header'
 import { LoadingDots } from '@components/ui/LoadingDots'
 import { Modal } from '@components/ui/Modal'
 import { useUIDispatch, useUIState } from '@contexts/ui'
@@ -31,14 +32,16 @@ const ModalView: FC<{ modalView: ModalViewType }> = ({ modalView }) => {
 
 const ModalUI = () => {
 	const { displayModal, modalView } = useUIState()
-	console.log(displayModal, modalView)
 	return displayModal && <ModalView modalView={modalView} />
 }
 
 export const Layout: VFC<Props> = ({ children }) => {
+	const loggedIn = true
+
 	return (
-		<main className="max-w-screen-sm min-h-screen mx-auto my-0 px-5 flex flex-col justify-between">
+		<main className={`max-w-screen-sm min-h-screen mx-auto my-0 px-5 ${!loggedIn && `flex flex-col justify-between`}`}>
 			<ModalUI />
+			{loggedIn && <Header />}
 			<>{children}</>
 		</main>
 	)

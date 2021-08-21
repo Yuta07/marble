@@ -1,4 +1,4 @@
-import { ComponentPropsWithRef } from 'react'
+import { ComponentPropsWithRef, forwardRef } from 'react'
 import classnames from 'classnames'
 import styles from './Button.module.scss'
 import { LoadingDots } from '../LoadingDots'
@@ -9,7 +9,7 @@ interface ButtonProps extends BaseProps {
 	loading?: boolean
 }
 
-export const Button = ({ children, className, loading, ...props }: ButtonProps) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, className, loading, ...props }, ref) => {
 	const rootClassName = classnames(
 		styles.button,
 		{ [styles.loading]: loading, [styles.disabled]: props.disabled },
@@ -17,8 +17,8 @@ export const Button = ({ children, className, loading, ...props }: ButtonProps) 
 	)
 
 	return (
-		<button {...props} ref={props.ref} className={rootClassName}>
+		<button {...props} ref={ref} className={rootClassName}>
 			{loading ? <LoadingDots /> : children}
 		</button>
 	)
-}
+})
