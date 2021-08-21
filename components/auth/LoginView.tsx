@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import { Button } from '@components/ui/Button'
 import { Input } from '@components/ui/Input'
-import { useUIDispatch } from '@contexts/ui/useUIDispatch'
+import { useUIDispatch } from '@contexts/ui'
 
 export const LoginView = () => {
 	const [username, setUsername] = useState('')

@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css'
 
 import { Head } from '@components/common/Head'
 import { Layout } from '@components/common/Layout'
-import { UIProviderContainer } from '@contexts/ui/UIProviderContainer'
+import { UIProviderContainer } from '@contexts/ui'
 import '@styles/global.css'
 import '@styles/global.scss'
 

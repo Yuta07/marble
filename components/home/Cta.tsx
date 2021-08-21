@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { Button } from '@components/ui/Button'
-import { useUIDispatch } from '@contexts/ui/useUIDispatch'
+import { useUIDispatch } from '@contexts/ui'
 
 export const Cta = () => {
 	const { openModal, setModal } = useUIDispatch()

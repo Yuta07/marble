@@ -1,5 +1,5 @@
 import { createContext, ReactNode, VFC } from 'react'
-import { ModalView, UIState, useUICore } from './useUICore'
+import { ModalViewType, UIState, useUICore } from './useUICore'
 
 type Props = {
 	children: ReactNode
@@ -8,7 +8,7 @@ type Props = {
 type DispatchAction = {
 	openModal: () => void
 	closeModal: () => void
-	setModal: (state: ModalView) => void
+	setModal: (state: ModalViewType) => void
 	openSidebar: () => void
 	closeSidebar: () => void
 }

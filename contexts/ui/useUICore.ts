@@ -1,11 +1,11 @@
 import { useCallback, useMemo, useReducer } from 'react'
 
-export type ModalView = 'LOGIN' | 'SIGNUP'
+export type ModalViewType = 'LOGIN' | 'SIGNUP'
 
 export type UIState = {
 	displayModal: boolean
 	displaySidebar: boolean
-	modalView: ModalView
+	modalView: ModalViewType
 }
 
 const OPEN_MODAL = 'OPEN_MODAL'
@@ -24,7 +24,7 @@ type closeModalAction = {
 
 type setModalAction = {
 	type: typeof SET_MODAL
-	payload: ModalView
+	payload: ModalViewType
 }
 
 type openSidebarAction = {
@@ -87,7 +87,7 @@ export const useUICore = () => {
 	}, [dispatch])
 
 	const setModal = useCallback(
-		(state: ModalView) => {
+		(state: ModalViewType) => {
 			dispatch({ type: 'SET_MODAL', payload: state })
 		},
 		[dispatch]

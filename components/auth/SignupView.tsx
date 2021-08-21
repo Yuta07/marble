@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import { Button } from '@components/ui/Button'
 import { Input } from '@components/ui/Input'
-import { useUIDispatch } from '@contexts/ui/useUIDispatch'
+import { useUIDispatch } from '@contexts/ui'
 
 const SignupView = () => {
 	const [username, setUsername] = useState('')
@@ -68,7 +68,7 @@ const SignupView = () => {
 					onChange={handlePasswordChange}
 				/>
 				<Button className="text-base mt-6" loading={loading} disabled={disabled}>
-					Login
+					Signup
 				</Button>
 			</div>
 			<p className="mt-8 text-center">
