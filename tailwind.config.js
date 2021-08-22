@@ -20,7 +20,7 @@ module.exports = {
 			gray: {
 				lighten: 'var(--color-gray-lighten)',
 				DEFAULT: 'var(--color-gray)',
-				darken: 'var(--color-gray-darken)',
+				darken: 'var(--color-gray-derken)',
 			},
 			main: {
 				lighten: 'var(--color-main-lighten)',

@@ -21,7 +21,7 @@ export const Cta = () => {
 			<div className="flex justify-center">
 				<Image quality="85" src="/bear-outline.svg" alt="cta-logo" height={240} width={240} />
 			</div>
-			<h1 className="text-2xl text-center">Welocome to socket chat trial place</h1>
+			<h1 className="text-2xl text-center">Welocome to socket chat trial place. Only mobile display size.</h1>
 			<div className="w-full mt-8 flex justify-around">
 				<Button className="px-5 py-2 text-lg" onClick={handleModalSignup}>
 					Signup

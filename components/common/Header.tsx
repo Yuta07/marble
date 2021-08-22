@@ -6,11 +6,11 @@ export const Header = () => {
 	const { openSidebar } = useUIDispatch()
 
 	return (
-		<header className="p-1 flex content-center justify-between ">
+		<header className="p-1 flex items-center justify-between ">
 			<Image quality="85" src="/bear-outline.svg" alt="header_bear_logo" width={60} height={60} />
-			<div className="my-auto inline-flex content-center">
-				<button className="p-2 border-none" onClick={openSidebar}>
-					<FaGripLines />
+			<div className="my-auto inline-flex items-center">
+				<button className="ml-2 p-2 border-none" onClick={openSidebar}>
+					<FaGripLines className="text-gray-darken" />
 				</button>
 			</div>
 		</header>

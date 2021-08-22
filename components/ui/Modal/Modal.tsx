@@ -8,7 +8,6 @@ import styles from './Modal.module.scss'
 type Props = {
 	children: ReactNode
 	className?: string
-	width?: string
 	onClose: () => void
 }
 

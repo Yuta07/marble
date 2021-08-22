@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useReducer } from 'react'
 
-export type ModalViewType = 'LOGIN' | 'SIGNUP'
+export type ModalViewType = 'LOGIN' | 'SIGNUP' | 'MAKE_ROOM'
 
 export type UIState = {
 	displayModal: boolean
