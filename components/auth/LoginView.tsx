@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { Button } from '@components/ui/Button'
 import { Input } from '@components/ui/Input'
 import { useUIDispatch } from '@contexts/ui'
@@ -67,7 +67,7 @@ export const LoginView = () => {
 					value={password}
 					onChange={handlePasswordChange}
 				/>
-				<Button className="text-base mt-6" loading={loading} disabled={disabled}>
+				<Button className="mt-6" loading={loading} disabled={disabled}>
 					Login
 				</Button>
 			</div>
