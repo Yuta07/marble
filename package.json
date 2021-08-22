@@ -11,7 +11,9 @@
     "lint-fix": "eslint src/**/*.{ts,tsx} --fix",
     "lint-style": "stylelint 'src/**/*.{ts,tsx,css,scss}'",
     "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write ."
+    "prettier-fix": "prettier --write .",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +48,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-tailwindcss": "^1.14.3",
-    "husky": "^7.0.1",
+    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
     "stylelint": "^13.12.0",
@@ -63,9 +65,8 @@
   },
   "lint-staged": {
     "*.{js, jsx, ts, tsx, json, md}": [
-      "yarn check-types",
       "yarn lint",
-      "yarn prettier-check",
+      "yarn prettier-fix",
       "git add"
     ]
   }
