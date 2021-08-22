@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useRef } from 'react'
+import React, { useCallback, useState } from 'react'
 import { Button } from '@components/ui/Button'
 import { Input } from '@components/ui/Input'
 import { useUIDispatch } from '@contexts/ui'

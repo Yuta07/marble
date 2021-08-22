@@ -15,8 +15,8 @@ const Loading = () => (
 )
 
 const SignupView = dynamic(() => import('@components/auth/SignupView'), { loading: () => <Loading /> })
-
 const NavListView = dynamic(() => import('@components/common/NavList'), { loading: () => <Loading /> })
+const MakeRoomView = dynamic(() => import('@components/room/MakeRoomView'), { loading: () => <Loading /> })
 
 type Props = {
 	children: ReactNode
@@ -31,7 +31,7 @@ const ModalView: FC<{ modalView: ModalViewType }> = ({ modalView }) => {
 		<Modal onClose={closeModal}>
 			{modalView === 'LOGIN' && <LoginView />}
 			{modalView === 'SIGNUP' && <SignupView />}
-			{loggedIn ? modalView === 'MAKE_ROOM' && <p>add room</p> : null}
+			{loggedIn ? modalView === 'MAKE_ROOM' && <MakeRoomView /> : null}
 		</Modal>
 	)
 }
