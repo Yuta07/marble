@@ -1,11 +1,19 @@
 {
-  "name": "marble",
+  "name": "maru",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
+    "lint-fix": "eslint src/**/*.{ts,tsx} --fix",
+    "lint-style": "stylelint 'src/**/*.{ts,tsx,css,scss}'",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write .",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -14,10 +22,12 @@
     ]
   },
   "dependencies": {
-    "next": "10.0.8",
-    "next-seo": "^4.20.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "classnames": "^2.2.6",
+    "next": "11.1.0",
+    "next-seo": "^4.26.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "sanitize.css": "^12.0.1",
     "sass": "^1.32.8",
@@ -25,21 +35,27 @@
     "swr": "^0.5.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.33",
+    "@types/body-scroll-lock": "^3.1.0",
+    "@types/classnames": "^2.2.11",
+    "@types/node": "^16.6.2",
     "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.3.1",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
-    "husky": "^5.1.3",
-    "lint-staged": "^10.5.4",
+    "eslint-plugin-tailwindcss": "^1.14.3",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
     "stylelint": "^13.12.0",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^21.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
+    "tailwindcss": "^2.2.7",
     "typescript": "^4.2.3"
   },
   "husky": {
@@ -48,8 +64,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts, tsx}": [
-      "eslint --fix"
+    "*.{js, jsx, ts, tsx, json, md}": [
+      "yarn lint",
+      "yarn prettier-fix"
     ]
   }
 }

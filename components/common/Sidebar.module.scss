@@ -1,0 +1,14 @@
+@import '/styles/mixins';
+
+.overlay {
+	background: rgba(0, 0, 0, 0.15);
+	-webkit-transition: all var(--animation-transition) ease;
+	transition: all var(--animation-transition) ease;
+}
+
+.close {
+	svg {
+		display: inline-flex;
+		align-items: center;
+	}
+}

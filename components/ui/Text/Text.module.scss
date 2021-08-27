@@ -1,0 +1,13 @@
+@import '/styles/mixins';
+
+.heading_first {
+	font-size: var(--font-size-xxl);
+}
+
+.heading_two {
+	font-size: var(--font-size-l);
+}
+
+.text {
+	font-size: var(--font-size-s);
+}

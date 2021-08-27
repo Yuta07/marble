@@ -21,13 +21,15 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
 		'prettier',
-		'prettier/@typescript-eslint',
+		'plugin:tailwindcss/recommended',
 	],
-	plugins: ['@typescript-eslint', 'prettier', 'react'],
+	plugins: ['prettier', 'react'],
+	ignorePatterns: ['*.config.js'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
 		'react/prop-types': 'off',
 		'react/no-unescaped-entities': 'off',
+		'react/display-name': 'off',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'@typescript-eslint/no-empty-function': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
@@ -36,6 +38,7 @@ module.exports = {
 		'@typescript-eslint/no-require-imports': 'warn',
 		'@typescript-eslint/no-unused-vars': 'warn',
 		'@typescript-eslint/prefer-for-of': 'warn',
+		'tailwindcss/no-custom-classname': 'off',
 	},
 	settings: {
 		react: {

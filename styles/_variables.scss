@@ -1,0 +1,43 @@
+:root {
+	/* base color */
+	--color-primary: #ffffff;
+	--color-secondary: #333333;
+	--color-gray: #939597;
+	--color-gray-lighten: #b6b7b9;
+	--color-gray-derken: #6f7071;
+	--color-error: #ff521b;
+	--color-success: #b5ffe9;
+	--color-main: #5f4b8b;
+	--color-main-lighten: #9988bf;
+	--color-main-darken: #49396a;
+	--color-transparent: transparent;
+
+	/* font size */
+	--font-size-xxs: 10px;
+	--font-size-xs: 12px;
+	--font-size-s: 14px;
+	--font-size-m: 16px;
+	--font-size-l: 18px;
+	--font-size-xl: 20px;
+	--font-size-xxl: 24px;
+
+	/* font bold */
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+
+	/* border */
+	--line-width-normal: 1px;
+	--line-width-bold: 2px;
+	--line-style: solid;
+	--line-radius: 8px;
+	--line-radius-double: 16px;
+	--border-normal: var(--line-width-normal) var(--line-style) var(--color-gray);
+	--border-normal-main: var(--line-width-normal) var(--line-style) var(--color-main);
+	--border-bold: var(--line-width-bold) var(--line-style) var(--color-gray);
+
+	/* opacity */
+	--hover-feedback-opacity: 0.7;
+
+	/* animation */
+	--animation-transition: 0.2s;
+}

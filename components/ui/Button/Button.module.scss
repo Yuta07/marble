@@ -1,0 +1,24 @@
+@import '/styles/mixins';
+
+.button {
+	padding: 5px 10px;
+	border: none;
+	border-radius: var(--line-radius);
+	color: var(--color-primary);
+	background: var(--color-main);
+	font-size: var(--font-size-s);
+	cursor: pointer;
+
+	&:hover {
+		opacity: var(--hover-feedback-opacity);
+		transition: var(--animation-transition);
+	}
+}
+
+.loading {
+	background: var(--color-gray-lighten);
+}
+
+.disabled {
+	background: var(--color-gray);
+}
