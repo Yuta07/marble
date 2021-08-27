@@ -66,8 +66,7 @@
   "lint-staged": {
     "*.{js, jsx, ts, tsx, json, md}": [
       "yarn lint",
-      "yarn prettier-fix",
-      "git add"
+      "yarn prettier-fix"
     ]
   }
 }

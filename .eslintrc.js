@@ -38,6 +38,7 @@ module.exports = {
 		'@typescript-eslint/no-require-imports': 'warn',
 		'@typescript-eslint/no-unused-vars': 'warn',
 		'@typescript-eslint/prefer-for-of': 'warn',
+		'tailwindcss/no-custom-classname': 'off',
 	},
 	settings: {
 		react: {

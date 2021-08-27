@@ -9,7 +9,7 @@ import { useUIDispatch, useUIState } from '@contexts/ui'
 import type { ModalViewType } from '@contexts/ui'
 
 const Loading = () => (
-	<div className="max-w-screen-sm min-h-screen mx-auto flex items-center justify-center">
+	<div className="flex justify-center items-center mx-auto max-w-screen-sm min-h-screen">
 		<LoadingDots />
 	</div>
 )

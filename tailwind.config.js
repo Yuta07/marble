@@ -30,6 +30,14 @@ module.exports = {
 			error: 'var(--color-error)',
 			success: 'var(--color-success)',
 		},
+		borderColor: {
+			DEFAULT: '#939597',
+			main: '#5f4b8b',
+		},
+		borderRadius: {
+			DEFAULT: '8px',
+			circle: '50%',
+		},
 		fontFamily: {
 			sans: [
 				'Helvetica Neue',
@@ -45,7 +53,6 @@ module.exports = {
 				'sans-serif',
 			],
 		},
-		borderRadius: { DEFAULT: '.5rem' },
 	},
 	variants: {
 		extend: {},

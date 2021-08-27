@@ -5,7 +5,7 @@ import { Text } from '@components/ui/Text'
 
 export const SettingsView = () => {
 	return (
-		<div className="w-full">
+		<div className="py-10 w-full">
 			<Text variant="h1">Settings</Text>
 			<div className="mt-5">
 				<Text variant="h2" className="text-gray-darken">
@@ -20,10 +20,10 @@ export const SettingsView = () => {
 				<PasswordSettings />
 			</div>
 			<div className="mt-10">
-				<Text variant="h2" className="pt-5 border-solid border-t text-error border-gray drop-shadow">
+				<Text variant="h2" className="pt-5 text-error border-t border-gray border-solid drop-shadow">
 					Danger Zone
 				</Text>
-				<div className="mt-4 p-4 border-solid border border-gray rounded drop-shadow">
+				<div className="p-4 mt-4 rounded border border-gray border-solid drop-shadow">
 					<DangerZone />
 				</div>
 			</div>
