@@ -47,10 +47,10 @@ const SignupView = () => {
 
 	return (
 		<form className="w-full" onSubmit={handleSignup}>
-			<img src="/bear-outline.svg" className="w-32 h-32 mx-auto" />
+			<img src="/bear-outline.svg" className="mx-auto w-32 h-32" />
 			<h2 className="text-xl text-center">Signup</h2>
-			<div className="w-full flex flex-col">
-				{message && <p className="text-error mt-4 px-3 py-2 border border-solid border-error rounded">{message}</p>}
+			<div className="flex flex-col w-full">
+				{message && <p className="py-2 px-3 mt-4 text-error rounded border border-solid border-error">{message}</p>}
 				<Input
 					className="mt-4"
 					placeholder="username"
@@ -72,7 +72,7 @@ const SignupView = () => {
 				</Button>
 			</div>
 			<p className="mt-8 text-center">
-				<a className="text-s text-main" onClick={() => setModal('LOGIN')}>
+				<a className="text-main text-s" onClick={() => setModal('LOGIN')}>
 					Already have an account? Login.
 				</a>
 			</p>

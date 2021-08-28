@@ -27,7 +27,7 @@ export const UsernameSettings = () => {
 	const disabled = username === ''
 
 	return (
-		<div className="w-full flex flex-col">
+		<div className="flex flex-col w-full">
 			<Input
 				className="mt-2"
 				placeholder="username"
@@ -36,7 +36,7 @@ export const UsernameSettings = () => {
 				value={username}
 				onChange={handleUsernameChange}
 			/>
-			<Button className="w-24 mt-4 ml-auto" loading={loading} disabled={disabled} onClick={handleUsernameUpdate}>
+			<Button className="mt-4 ml-auto w-24" loading={loading} disabled={disabled} onClick={handleUsernameUpdate}>
 				Update
 			</Button>
 		</div>

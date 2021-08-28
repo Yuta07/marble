@@ -18,7 +18,7 @@ export const Chat: VFC<Props> = ({ chat }) => {
 	return (
 		<div className="mt-5 w-full">
 			{chat.userId === currnetUser.id ? (
-				<div style={{ maxWidth: '80%' }} className="flex mr-auto">
+				<div style={{ maxWidth: '80%' }} className="flex justify-start mr-auto">
 					<p
 						style={{ minWidth: '32px' }}
 						className="inline-flex justify-center items-center p-2 mr-4 w-8 h-8 rounded-circle border-2 border-main border-solid"
@@ -31,7 +31,7 @@ export const Chat: VFC<Props> = ({ chat }) => {
 					</div>
 				</div>
 			) : (
-				<div style={{ maxWidth: '80%' }} className="flex ml-auto">
+				<div style={{ maxWidth: '80%' }} className="flex justify-end ml-auto">
 					<div className="p-4 rounded border border-solid border-gray">
 						<small className="text-xs">{chat.updatedAt || chat.createdAt}</small>
 						<p className="mt-2 text-sm">{chat.message}</p>
