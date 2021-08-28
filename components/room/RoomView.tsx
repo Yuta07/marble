@@ -25,7 +25,7 @@ const CHAT_DATA = [
 		userId: '1',
 		username: 'yutaaaaa',
 		roomId: '1',
-		message: 'それでもいまだに街はた',
+		message: 'それでもいまだに街は',
 		createdAt: '2021-08-31',
 		updatedAt: null,
 	},
@@ -106,8 +106,10 @@ const CHAT_DATA = [
 export const RoomView = () => {
 	const roomName = 'general'
 	return (
-		<div className="py-10 w-full">
-			<Text variant="h1">{roomName}</Text>
+		<div className="flex flex-col items-center pt-6 pb-24 w-full">
+			<Text variant="h1" className="w-full text-left">
+				{roomName}
+			</Text>
 			{CHAT_DATA.map((chat) => {
 				return <Chat key={chat.id} chat={chat} />
 			})}
